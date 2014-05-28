@@ -1,0 +1,26 @@
+{
+  "name": "angular-smart-timeago",
+  "version": "0.0.0",
+  "homepage": "https://github.com/loveky/angular-smart-timeago",
+  "description": "An angular wrapper of jquery plugin smart-time-ago",
+  "main": "dist/angular-smart-timeago.js",
+  "keywords": [
+    "angularjs",
+    "timeago"
+  ],
+  "authors": [
+    "loveky"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16",
+    "smart-time-ago": "~0.1.5"
+  }
+}
