@@ -58,14 +58,9 @@
 <h3>
 <a name="timeago-directive" class="anchor" href="#timeago-directive"><span class="octicon octicon-link"></span></a>Timeago directive</h3>
 
-<p>You can use <code>timeago</code> directive to display a user friendly time. By default, smart-time-ago will check the value of <code>datatime</code> property for the ISO8601 timesting:</p>
+<p>You can use <code>timeago</code> directive to display a user friendly time. By default, <code>smart-time-ago</code> will check the value of <code>datatime</code> property for the ISO8601 timesting:</p>
 
 <div class="highlight highlight-html"><pre><span class="nt">&lt;timeago</span> <span class="na">datetime=</span><span class="s">"2014-05-28T18:01:50Z+0800"</span><span class="nt">&gt;&lt;/timeago&gt;</span>
-</pre></div>
-
-<p>If you are using another property to specify the ISO8601 time string other than <code>datatime</code>, you can tell the directive which property you are using by <code>attr</code> property:</p>
-
-<div class="highlight highlight-html"><pre><span class="nt">&lt;timeago</span> <span class="na">attr=</span><span class="s">"datastring"</span> <span class="na">datestring=</span><span class="s">"2014-05-28T18:01:50Z+0800"</span><span class="nt">&gt;&lt;/timeago&gt;</span>
 </pre></div>
 
 <h3>
@@ -77,6 +72,19 @@
   <span class="nx">attr</span><span class="o">:</span> <span class="s1">'datastring'</span>
 <span class="p">});</span>
 </pre></div>
+
+<p>Then you could write like this:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;timeago</span> <span class="na">datastring=</span><span class="s">"2014-05-28T18:01:50Z+0800"</span><span class="nt">&gt;&lt;/timeago&gt;</span>
+</pre></div>
+
+<h3>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>TODO</h3>
+
+<ol>
+<li>add <code>timeago</code> filter</li>
+<li>Add unit test</li>
+</ol>
       </section>
     </div>
 
