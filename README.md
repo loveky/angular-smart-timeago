@@ -18,7 +18,7 @@ var myapp = angular.module('myapp', ['ngSmartTimeago']);
 ```
 
 ### Timeago directive
-You can use `timeago` directive to display a user friendly time. By default, smart-time-ago will check the
+You can use `timeago` directive to display a user friendly time. By default, smart-time-ago will check the value of `datatime` property for the ISO8601 timesting:
 ```html
 <timeago datetime="2014-05-28T18:01:50Z+0800"></timeago>
 ```
