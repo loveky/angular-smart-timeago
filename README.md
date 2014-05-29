@@ -18,14 +18,9 @@ var myapp = angular.module('myapp', ['ngSmartTimeago']);
 ```
 
 ### Timeago directive
-You can use `timeago` directive to display a user friendly time. By default, smart-time-ago will check the value of `datatime` property for the ISO8601 timesting:
+You can use `timeago` directive to display a user friendly time. By default, `smart-time-ago` will check the value of `datatime` property for the ISO8601 timesting:
 ```html
 <timeago datetime="2014-05-28T18:01:50Z+0800"></timeago>
-```
-
-If you are using another property to specify the ISO8601 time string other than `datatime`, you can tell the directive which property you are using by `attr` property:
-```html
-<timeago attr="datastring" datestring="2014-05-28T18:01:50Z+0800"></timeago>
 ```
 
 ### Configuration
@@ -35,6 +30,10 @@ If you want to change the default property name which specifies the ISO8601 time
 angular.module('myapp').constant('ngSmartTimeagoConfig', {
   attr: 'datastring'
 });
+```
+Then you could write like this:
+```html
+<timeago datastring="2014-05-28T18:01:50Z+0800"></timeago>
 ```
 
 ### TODO
