@@ -17,10 +17,16 @@ Add the module `ngSmartTimeago` as a dependency to your app module:
 var myapp = angular.module('myapp', ['ngSmartTimeago']);
 ```
 
-### Timeago directive
+### Directive
 You can use `timeago` directive to display a user friendly time. By default, `smart-time-ago` will check the value of `datatime` property for the ISO8601 timesting:
 ```html
 <timeago datetime="2014-05-28T18:01:50Z+0800"></timeago>
+```
+
+### Filter
+If you just want to tranform the time string to a user friendly format but do not need to periodly refresh, you can use the `timeago` filter to perform a one-time convert:
+```html
+<h1>{{"2014-05-29T12:01:50+0800" | timeago}}</h1>
 ```
 
 ### Configuration
@@ -37,5 +43,4 @@ Then you could write like this:
 ```
 
 ### TODO
-1. add `timeago` filter
-2. Add unit test
+1. Add unit test

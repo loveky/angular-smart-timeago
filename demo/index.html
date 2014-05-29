@@ -10,7 +10,13 @@
   </head>
   <body ng-app="demoApp">
     <h1>
+      Directive<br>
       <timeago datetime="2014-05-29T12:01:50+0800"></timeago>
+    </h1>
+
+    <h1>
+      Filter<br>
+      {{"2014-05-29T12:01:50+0800" | timeago}}
     </h1>
     <script>
       angular.module("demoApp", ["ngSmartTimeago"]);

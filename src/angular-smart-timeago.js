@@ -37,3 +37,15 @@ ngSmartTimeago.directive("timeago", ["ngSmartTimeagoConfig", "$timeout",
     };
   }
 ]);
+
+ngSmartTimeago.filter('timeago',["smartTimeagoInstance", function(smartTimeagoInstance){
+  return function (input) {
+    return smartTimeagoInstance.timeAgoInWords(input);
+  }
+}]);
+
+ngSmartTimeago.factory("smartTimeagoInstance", ["$window", function($window) {
+  var instance = new $window.jQuery.fn.timeago.Constructor;
+
+  return instance;
+}]);
