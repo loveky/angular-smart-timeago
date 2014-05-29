@@ -9,7 +9,7 @@
     "timeago"
   ],
   "authors": [
-    "loveky"
+    {"name": "loveky", "email": "ylzcylx@gmail.com"}
   ],
   "license": "MIT",
   "ignore": [

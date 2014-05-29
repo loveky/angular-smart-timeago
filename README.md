@@ -36,3 +36,7 @@ angular.module('myapp').constant('ngSmartTimeagoConfig', {
   attr: 'datastring'
 });
 ```
+
+### TODO
+1. add `timeago` filter
+2. Add unit test
