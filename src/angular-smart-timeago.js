@@ -23,7 +23,6 @@ ngSmartTimeago.directive("timeago", ["ngSmartTimeagoConfig",
           scope_options,
           {selector: "timeago"}
         );
-        console.log(options);
         element.timeago(options);
 
         // Clear timer before destroying scope
