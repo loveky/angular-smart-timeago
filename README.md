@@ -1,6 +1,6 @@
 ### Installation
 You can choose your preferred method of installation:
-- Through bower `bower install angular-smart-timeago --save
+- Through bower `bower install angular-smart-timeago --save`
 - Download from GitHub [angular-smart-timeago.js](https://raw.githubusercontent.com/loveky/angular-smart-timeago/master/src/angular-smart-timeago.js)
 
 ### Usage
