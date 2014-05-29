@@ -6,6 +6,8 @@
   "main": "src/angular-smart-timeago.js",
   "keywords": [
     "angularjs",
+    "angular",
+    "smart",
     "timeago"
   ],
   "authors": [
