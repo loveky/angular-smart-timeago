@@ -1,6 +1,6 @@
 {
   "name": "angular-smart-timeago",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://loveky.github.io/angular-smart-timeago/",
   "description": "An angular wrapper of jquery plugin smart-time-ago",
   "main": "src/angular-smart-timeago.js",
@@ -11,7 +11,10 @@
     "timeago"
   ],
   "authors": [
-    {"name": "loveky", "email": "ylzcylx@gmail.com"}
+    {
+      "name": "loveky",
+      "email": "ylzcylx@gmail.com"
+    }
   ],
   "license": "MIT",
   "ignore": [
