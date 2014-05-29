@@ -37,8 +37,7 @@
 <p>You can choose your preferred method of installation:</p>
 
 <ul>
-<li>Through bower <code>bower install angular-moment --save</code>
-</li>
+<li>Through bower `bower install angular-smart-timeago --save</li>
 <li>Download from GitHub <a href="https://raw.githubusercontent.com/loveky/angular-smart-timeago/master/src/angular-smart-timeago.js">angular-smart-timeago.js</a>
 </li>
 </ul><h3>
@@ -58,7 +57,7 @@
 <h3>
 <a name="timeago-directive" class="anchor" href="#timeago-directive"><span class="octicon octicon-link"></span></a>Timeago directive</h3>
 
-<p>You can use <code>timeago</code> directive to display a user friendly time. By default, smart-time-ago will check the</p>
+<p>You can use <code>timeago</code> directive to display a user friendly time. By default, smart-time-ago will check the value of <code>datatime</code> property for the ISO8601 timesting:</p>
 
 <div class="highlight highlight-html"><pre><span class="nt">&lt;timeago</span> <span class="na">datetime=</span><span class="s">"2014-05-28T18:01:50Z+0800"</span><span class="nt">&gt;&lt;/timeago&gt;</span>
 </pre></div>
@@ -74,7 +73,7 @@
 <p>If you want to change the default property name which specifies the ISO8601 time string for all directive instance. You can do it with:</p>
 
 <div class="highlight highlight-js"><pre><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'myapp'</span><span class="p">).</span><span class="nx">constant</span><span class="p">(</span><span class="s1">'ngSmartTimeagoConfig'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="nx">attr</span><span class="o">:</span> <span class="s1">'datastring'</span>
+  <span class="nx">attr</span><span class="o">:</span> <span class="s1">'datastring'</span>
 <span class="p">});</span>
 </pre></div>
       </section>
