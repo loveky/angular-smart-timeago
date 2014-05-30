@@ -1,0 +1,24 @@
+{
+  "name": "angular-smart-timeago",
+  "version": "0.0.4",
+  "author": {
+    "name": "loveky",
+    "email": "ylzcylx@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loveky/angular-smart-timeago.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "^0.12.16",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.1.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --browsers Firefox --single-run"
+  }
+}
