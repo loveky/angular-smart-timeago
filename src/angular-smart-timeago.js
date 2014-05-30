@@ -24,9 +24,9 @@ ngSmartTimeago.directive("timeago", ["ngSmartTimeagoConfig", "$timeout",
         });
 
         scope.$watch(ngSmartTimeagoConfig.attr, function() {
-          if(angular.isDefined(element.data("timeago"))){
+          $timeout(function() {
             element.data("timeago").refresh();
-          }
+          })
         });
 
         // Clear timer before destroying scope
