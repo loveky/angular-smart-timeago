@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/loveky/angular-smart-timeago.svg?branch=master)](https://travis-ci.org/loveky/angular-smart-timeago)
+
 ### Installation
 You can choose your preferred method of installation:
 - Through bower `bower install angular-smart-timeago --save`
@@ -41,6 +43,3 @@ Then you could write like this:
 ```html
 <timeago datastring="2014-05-28T18:01:50Z+0800"></timeago>
 ```
-
-### TODO
-1. Add unit test
