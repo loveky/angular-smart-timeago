@@ -26,7 +26,7 @@ ngSmartTimeago.directive("timeago", ["ngSmartTimeagoConfig", "$timeout",
         scope.$watch(ngSmartTimeagoConfig.attr, function() {
           $timeout(function() {
             element.data("timeago").refresh();
-          })
+          });
         });
 
         // Clear timer before destroying scope
@@ -41,11 +41,11 @@ ngSmartTimeago.directive("timeago", ["ngSmartTimeagoConfig", "$timeout",
 ngSmartTimeago.filter('timeago',["smartTimeagoInstance", function(smartTimeagoInstance){
   return function (input) {
     return smartTimeagoInstance.timeAgoInWords(input);
-  }
+  };
 }]);
 
 ngSmartTimeago.factory("smartTimeagoInstance", ["$window", function($window) {
-  var instance = new $window.jQuery.fn.timeago.Constructor;
+  var instance = new $window.jQuery.fn.timeago.Constructor();
 
   return instance;
 }]);
