@@ -19,14 +19,10 @@ ngSmartTimeago.directive("timeago", ["ngSmartTimeagoConfig", "$timeout",
           {selector: "timeago"}
         );
 
-        $timeout(function() {
-          element.timeago(options);
-        });
+        element.timeago(options);
 
         scope.$watch(ngSmartTimeagoConfig.attr, function() {
-          $timeout(function() {
-            element.data("timeago").refresh();
-          });
+          element.data("timeago").refresh();
         });
 
         // Clear timer before destroying scope
